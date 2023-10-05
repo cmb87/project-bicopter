@@ -1,0 +1,13 @@
+  <launch>
+    <!-- Load the urdf into the parameter server. -->
+    <param name="robot_description" command="cat $(find bicopter)/urdf/bicopter.urdf" />
+
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" ></node>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen" > </node>
+
+
+    <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find bicopter)/rviz/rviz_test.rviz"  ></node>
+
+
+
+  </launch>
