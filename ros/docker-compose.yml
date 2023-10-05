@@ -1,0 +1,23 @@
+version: "3.5"
+
+services:
+
+  rosnoetic:
+    image: ros:noetic-ros-base-focal
+    restart: always
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    container_name: rosnoetic
+    privileged: true
+    network_mode: host
+    volumes:
+      - ./devws:/server_ws
+      - /dev/shm:/dev/shm
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev/input:/dev/input # For Joystick
+    environment:
+      - DISPLAY=:1
+    #  - DISPLAY=192.168.178.120:0.0
+      - ROS_MASTER_URI=http://192.168.178.94:11311
+      - ROS_IP=workmasterIV
+      - ROS_HOSTNAME=workmasterIV

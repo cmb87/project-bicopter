@@ -1,0 +1,24 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=fcV2Nrf_esc
+*Date=19:30:33
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;THT;1.48203;-5.07752;180;Bottom;Eng10
+2;;;5.64928;-7.25775;0;Top;TXT1
+3;;THT;10.372;-5.02672;180;Bottom;Eng8
+4;;SOT-23 [SMD];6.29203;-4.75752;90;Top;Q3
+5;;;5.70451;-1.86453;0;Top;TXT1
+6;;THT;1.48203;-2.53752;180;Bottom;Eng11
+7;;THT;1.48203;-7.61752;180;Bottom;Eng7
+8;220;THT;4.02203;-3.80752;90;Bottom;R1
+9;;300 mil [THT];7.83203;-5.05212;90;Bottom;D1

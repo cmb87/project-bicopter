@@ -1,0 +1,40 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=fcV2Nrf_escboard
+*Date=07:52:40
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;THT;14.9144;-3.79155;90;Bottom;Eng13
+2;;SOT-23 [SMD];13.6444;-8.60155;-180;Top;Q5
+3;220;THT;23.24;-5.06155;-90;Bottom;R3
+4;;THT;16.1844;-17.7616;90;Bottom;Eng18
+5;;THT;19.9944;-10.6496;90;Bottom;Eng22
+6;220;THT;27.05;-11.4116;-180;Bottom;R4
+7;;;4.66978;-9.04089;0;Top;TXT1
+8;;THT;9.27;-1.25155;-90;Bottom;J1
+9;;300 mil [THT];4.77984;-15.2216;-180;Bottom;D5
+10;;THT;29.59;-5.06155;0;Bottom;Eng15
+11;220;THT;4.75444;-11.4116;-180;Bottom;R5
+12;220;THT;13.6444;-10.1416;0;Bottom;R2
+13;;SOT-23 [SMD];4.75444;-12.9517;0;Top;Q8
+14;;SOT-23 [SMD];27.05;-12.9516;0;Top;Q7
+15;;THT;4.75444;-17.7616;-90;Bottom;Eng19
+16;;SOT-23 [SMD];24.78;-5.06154;90;Top;Q6
+17;;300 mil [THT];27.05;-5.03615;-90;Bottom;D3
+18;;THT;7.29444;-6.33155;180;Bottom;Eng21
+19;;300 mil [THT];27.0754;-15.2216;-180;Bottom;D4
+20;;THT;13.6444;-17.7616;90;Bottom;Eng20
+21;;THT;2.21444;-6.33155;180;Bottom;Eng12
+22;;THT;16.1844;-15.2216;90;Bottom;Eng16
+23;;300 mil [THT];14.889;-6.33155;0;Bottom;D2
+24;;THT;13.6444;-15.2216;90;Bottom;Eng14
+25;;THT;27.05;-17.7616;-90;Bottom;Eng17
