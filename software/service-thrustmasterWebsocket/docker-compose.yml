@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  control-joystick:
+    container_name: control-joystick
+    restart: always
+    privileged: true
+    image: "cmb87/skylink-thrustmaster:latest-websocket"
+    environment:
+      #- LOGGING=CRITICAL
+      - ENV_WEBSOCKETSERVER=192.168.2.147
+      - ENV_WEBSOCKETPORT=81
+      #- ENV_CHANNELORDER=pitch roll throttle yaw aux1 aux2 aux3 aux4 # Multiwii
+      - ENV_CHANNELORDER=throttle roll pitch yaw aux1 aux2 aux3 aux4 # Beta
+    volumes:
+      - /dev:/dev:ro
+    ports:
+      - "81:81"
+#volumes:
+#  nginx:
+#  prometheus:
+#  dist:
+

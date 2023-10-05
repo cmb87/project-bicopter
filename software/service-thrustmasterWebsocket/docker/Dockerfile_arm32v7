@@ -1,0 +1,13 @@
+FROM cmb87/opencv_arm32v7_alpine:latest
+
+WORKDIR /app
+COPY requirements_arm32v7.txt /app
+COPY app /app/
+
+RUN apk --no-cache add gcc musl-dev python3-dev libffi-dev make build-base && \
+    pip3 install -r requirements_arm32v7.txt && \
+    apk del gcc musl-dev python3-dev make build-base
+
+EXPOSE 5000
+# Run app_ws.py when the container launches
+CMD ["python3", "app.py"]

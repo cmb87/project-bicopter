@@ -1,0 +1,17 @@
+
+
+
+<!-- <button (click)="drawPolygon()">Draw it</button>
+<button class="btn btn-primary" id="send-btn" (click)=addPolygon() >Add Polygon</button>
+<button class="btn btn-primary" id="send-btn" (click)=removePolygon() >Remove Polygon</button>
+<button class="btn btn-primary" id="send-btn" (click)=toggleNoise() >Toggle Noise</button> style="width: 18rem;" -->
+  
+<div class="card" style="width: 40rem;" >
+    <canvas width="300" height="300" #canvas></canvas>
+    <div class="card-body">
+      <h5 class="card-title">Feed on <b>"{{socketiotopic}}"</b></h5>
+      <code>
+        <pre>{{inferenceRes | json}}</pre>
+      </code>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+FROM arm32v7/node:16-alpine3.11
+
+MAINTAINER cmb87403@web.de
+
+WORKDIR /home/node/app
+COPY dist/demoapp /home/node/app/
+
+# RUN apk add --update nodejs npm && \
+RUN npm ci && \
+    chown -R node /home/node/app/
+
+USER node
+EXPOSE 5000
+
+CMD ["node", "app.js"]

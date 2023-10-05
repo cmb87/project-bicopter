@@ -1,0 +1,49 @@
+<div class="card-group">
+
+  <div class="card" style="width: 18rem;">
+    <app-videofeed socketiotopic="{{ videofeed1topic }}"></app-videofeed>
+    <div class="card-body">
+      <h5 class="card-title">Camera 1</h5>
+      <p class="card-text">Feed of camera 1 on <b>"{{videofeed1topic}}"</b></p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <app-videofeed socketiotopic="{{ videofeed2topic }}"></app-videofeed>
+    <div class="card-body">
+      <h5 class="card-title">Camera 2</h5>
+      <p class="card-text">Feed of camera 2 on <b>"{{videofeed2topic}}"</b></p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <app-videofeed socketiotopic="{{ videofeed3topic }}"></app-videofeed>
+    <div class="card-body">
+      <h5 class="card-title">Camera 3</h5>
+      <p class="card-text">Feed of camera 3 on <b>"{{videofeed3topic}}"</b></p>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="card-group">
+<div class="card" style="width: 18rem;">
+  <app-joystick posy="50%" socketiotopic="{{ joysticktopic }}"></app-joystick>
+  <div class="card-body">
+    <h5 class="card-title">Joystick</h5>
+    <p class="card-text">Move the joystick to controll pitch and roll movements. Emits on topic <b>"{{joysticktopic}}"</b></p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <app-slider socketiotopic="{{ slider1topic }}"></app-slider>
+  <app-slider socketiotopic="{{ slider2topic }}"></app-slider>
+  <div class="card-body">
+    <h5 class="card-title">Throttle and yaw</h5>
+    <p class="card-text">Move the slider to control throttle ( <b>"{{slider1topic}}"</b>) and yaw ( <b>"{{slider2topic}}"</b>). </p>
+  </div>
+</div>
+
+
+</div>
