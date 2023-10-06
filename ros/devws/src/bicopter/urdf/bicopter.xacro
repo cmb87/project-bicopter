@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://wiki.ros.org/xacro" name="bicopter">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="bicopter">
 
   <!-- BGN - Include -->
   <xacro:include filename="/server_ws/src/bicopter/urdf/robot_parameters.xacro" />
@@ -162,11 +162,11 @@
 
   <gazebo>
     <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
-      <update_rate>20</update_rate>
-      <joint_name>${arm_left}__${motor_left}</joint_name>
-      <joint_name>${arm_right}__${motor_right}</joint_name>
-      <joint_name>${motor_left}__${prop_left}</joint_name>
-      <joint_name>${motor_right}__${prop_right}</joint_name>
+      <updateRate>20</updateRate>
+      <jointName>${arm_left}__${motor_left}</jointName>
+      <jointName>${arm_right}__${motor_right}</jointName>
+      <jointName>${motor_left}__${prop_left}</jointName>
+      <jointName>${motor_right}__${prop_right}</jointName>
     </plugin>
   </gazebo>
 
@@ -198,6 +198,8 @@
 
   <gazebo>
     <plugin name="gazebo_ros_force" filename="libgazebo_ros_force.so">
+      <bodyName>${prop_right}</bodyName>
+      <topicName>force/${prop_right}</topicName>
       <ros>
         <!-- Add a namespace -->
         <namespace>/force</namespace>
@@ -213,6 +215,8 @@
 
   <gazebo>
     <plugin name="gazebo_ros_force" filename="libgazebo_ros_force.so">
+      <bodyName>${motor_left}</bodyName>
+      <topicName>force/${prop_left}</topicName>
       <ros>
         <!-- Add a namespace -->
         <namespace>/force</namespace>
@@ -221,7 +225,7 @@
       </ros>
       <force_frame>link</force_frame>
       <link_name>${motor_left}</link_name>
-      <!-- <bodyName>${motor_left}</bodyName> -->
+      
     </plugin>
   </gazebo>
 
