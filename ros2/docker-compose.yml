@@ -22,5 +22,5 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - /dev/input:/dev/input # For Joystick
     environment:
-      - DISPLAY=:1
-    #  - DISPLAY=192.168.178.120:0.0
+    #  - DISPLAY=:1
+      - DISPLAY=192.168.178.120:0.0
